@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15EA74C924A4AE400001829E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA74C824A4AE400001829E /* AppDelegate.swift */; };
-		15EA74CB24A4AE400001829E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA74CA24A4AE400001829E /* SceneDelegate.swift */; };
-		15EA74CD24A4AE400001829E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA74CC24A4AE400001829E /* ViewController.swift */; };
+		15EA74CD24A4AE400001829E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA74CC24A4AE400001829E /* FirstViewController.swift */; };
 		15EA74D024A4AE400001829E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15EA74CE24A4AE400001829E /* Main.storyboard */; };
 		15EA74D224A4AE420001829E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15EA74D124A4AE420001829E /* Assets.xcassets */; };
 		15EA74D524A4AE420001829E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15EA74D324A4AE420001829E /* LaunchScreen.storyboard */; };
@@ -19,8 +18,7 @@
 /* Begin PBXFileReference section */
 		15EA74C524A4AE400001829E /* FormPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15EA74C824A4AE400001829E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15EA74CA24A4AE400001829E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15EA74CC24A4AE400001829E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15EA74CC24A4AE400001829E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		15EA74CF24A4AE400001829E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15EA74D124A4AE420001829E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15EA74D424A4AE420001829E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,13 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				15EA74C824A4AE400001829E /* AppDelegate.swift */,
-				15EA74CA24A4AE400001829E /* SceneDelegate.swift */,
-				15EA74CC24A4AE400001829E /* ViewController.swift */,
+				15EA74CC24A4AE400001829E /* FirstViewController.swift */,
+				15EA74DC24A4B1BD0001829E /* SecondViewController.swift */,
+				15EA74D324A4AE420001829E /* LaunchScreen.storyboard */,
 				15EA74CE24A4AE400001829E /* Main.storyboard */,
 				15EA74D124A4AE420001829E /* Assets.xcassets */,
-				15EA74D324A4AE420001829E /* LaunchScreen.storyboard */,
 				15EA74D624A4AE420001829E /* Info.plist */,
-				15EA74DC24A4B1BD0001829E /* SecondViewController.swift */,
 			);
 			path = FormPicker;
 			sourceTree = "<group>";
@@ -97,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Meet Thanki";
 				TargetAttributes = {
 					15EA74C424A4AE400001829E = {
@@ -142,9 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15EA74DD24A4B1BD0001829E /* SecondViewController.swift in Sources */,
-				15EA74CD24A4AE400001829E /* ViewController.swift in Sources */,
+				15EA74CD24A4AE400001829E /* FirstViewController.swift in Sources */,
 				15EA74C924A4AE400001829E /* AppDelegate.swift in Sources */,
-				15EA74CB24A4AE400001829E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +192,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -256,6 +253,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -297,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.meetcodes..FormPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.meetcodes..FormPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
